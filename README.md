@@ -15,12 +15,12 @@ find . -not -path '*/exampleSite/*' \( -name '*.html' -o -name '*.css' \) | xarg
       12 ./layouts/_default/single.html
       16 ./layouts/_default/terms.html
        0 ./layouts/partials/foot_custom.html
-       9 ./layouts/partials/footer.html
+      20 ./layouts/partials/footer.html
        0 ./layouts/partials/head_custom.html
       20 ./layouts/partials/header.html
        7 ./static/css/fonts.css
       51 ./static/css/style.css
-     138 total
+     149 total
 ```
 
 I can certainly further reduce the code, for example, by eliminating the CSS, but I believe a tiny bit CSS can greatly improve readability. You cannot really find many CSS frameworks that only contain 50 lines of code.
