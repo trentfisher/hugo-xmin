@@ -1,6 +1,0 @@
-{{- $src := .Get "src" -}}
-{{- with .Parent -}}
-  <img src="{{.Page.RelPermalink}}{{$src}}" class="{{.Get "class"}}-image">
-{{- else -}}
-  <img src="{{.Page.RelPermalink}}{{$src}}">
-{{- end }}
