@@ -1,5 +1,5 @@
 body {
-  max-width: 800px;
+  //max-width: 800px;
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
@@ -13,11 +13,14 @@ body {
     margin: 0;
 }
 .menu li { display: inline-block; }
-.article-meta, .menu a {
+.article-meta,.menu a {
+  color: black;
   text-decoration: none;
   background: #eee;
   padding: 2px;
+  margin-right: 2px;
   border-radius: 2px;
+  font-weight: bold;
 }
 .terms { font-size: .9em; }
 .article-meta, footer { text-align: center; }
@@ -68,4 +71,36 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 .disqus {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+}
+
+.pagination {
+    text-align: center;
+}
+.pagination li {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0 .4em 0 .4em;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+.pagination > li > a {
+    color: black;
+    text-decoration: none;
+}
+ul.article-list {
+    padding: 0 2em 0 2em;
+}
+.article-list li {
+    list-style-type: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.article-meta a {
+    color: black;
+    text-decoration: none;
+    font-size: 110%;
+}
+.article-meta .date {
+    font-size: 60%;
 }

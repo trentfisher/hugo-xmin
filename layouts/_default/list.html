@@ -6,13 +6,19 @@
 
 {{ .Content }}
 
-<ul>
-  {{ range (where .Data.Pages "Section" "!=" "") }}
+<ul class="article-list">
+{{ range .Paginator.Pages }}
   <li>
-    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    <div class="article-meta">
     <a href="{{ .URL }}">{{ .Title }}</a>
+    <br/>
+    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+    </div>
+    {{ .Content }}
   </li>
   {{ end }}
 </ul>
+{{ template "_internal/pagination.html" . }}
 
 {{ partial "footer.html" . }}
+
