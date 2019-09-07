@@ -8,7 +8,11 @@
 
 <ul class="article-list">
 {{ range .Paginator.Pages }}
-  <li>
+  {{ if .Params.draft }}
+    <li class="draft">
+  {{ else }}
+    <li>
+  {{ end }}
     <div class="article-meta">
     <a href="{{ .URL }}">{{ .Title }}</a>
     <br/>

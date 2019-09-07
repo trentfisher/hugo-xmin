@@ -1,5 +1,5 @@
 body {
-  //max-width: 800px;
+  max-width: 90%;
   margin: auto;
   padding: 1em;
   line-height: 1.5em;
@@ -91,7 +91,7 @@ thead, tfoot, tr:nth-child(even) { background: #eee }
 ul.article-list {
     padding: 0 2em 0 2em;
 }
-.article-list li {
+ul.article-list > li {
     list-style-type: none;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -103,4 +103,13 @@ ul.article-list {
 }
 .article-meta .date {
     font-size: 60%;
+}
+
+pre {
+      line-height: 1em;
+}
+
+li.draft {
+    border: 1px solid green;
+    padding: 3px;
 }
